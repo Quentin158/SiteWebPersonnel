@@ -1,39 +1,33 @@
-/* Réinitialisation des marges et des padding du corps de la page */
 body {
-    font-family: Arial, sans-serif; /* Police par défaut */
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
 }
 
-/* Style de la barre de navigation */
 nav {
-    background-color: #489CCF; /* Couleur de fond de la barre de navigation */
+    background-color: #489CCF; 
 }
 
-/* Style de la liste non ordonnée (ul) du menu */
 ul {
-    list-style-type: none; /* Supprime les puces de la liste */
-    margin: 0; /* Supprime la marge par défaut */
-    padding: 0; /* Supprime le rembourrage par défaut */
-    overflow: hidden; /* Gestion du dépassement pour éviter que les éléments flottants ne déforment la mise en page */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    overflow: hidden; 
 }
 
-/* Style des éléments de la liste (li) du menu */
 li {
-    float: left; /* Les éléments flottent à gauche pour créer un menu horizontal */
+    float: left;
 }
 
-/* Style des liens (a) du menu */
 a {
-    display: block; /* Les liens sont affichés en tant que bloc pour occuper toute la largeur du conteneur li */
-    color: white; /* Couleur du texte */
-    text-align: center; /* Centrage du texte */
-    padding: 14px 16px; /* Rembourrage pour l'apparence du bouton */
-    text-decoration: none; /* Supprime la soulignement par défaut des liens */
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
 }
 
-/* Style des liens au survol (hover) */
 a:hover {
-    background-color: #ddd; /* Couleur de fond au survol */
-    color: black; /* Changement de couleur du texte au survol */
+    background-color: #ddd; 
+    color: black;
 }
