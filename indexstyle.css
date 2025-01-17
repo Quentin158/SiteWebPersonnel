@@ -1,0 +1,117 @@
+/* Fichier CSS pour la page index
+   Auteur: Quentin MARTINEZ
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.bannière{
+    width: 100%;
+    height: 100vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.barre{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.barre ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.barre ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.barre ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.barre ul li:hover::after{
+    width: 100%;
+}
+
+.texte{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.texte h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+    left: 740px;
+    top: -160px;
+}
+
+.texte h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px orange;
+}
+
+.texte h2:nth-child(2){
+    color: orange;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+.texte p{
+    position: absolute;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    left: 400px;
+    top: -100px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
